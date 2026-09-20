@@ -1,6 +1,6 @@
 "use client";
 
-export default function GreenLandPage() {
+export default function AstonCloudPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#06110b] text-white">
       {/* Background */}
@@ -25,37 +25,38 @@ export default function GreenLandPage() {
           <div>
             <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-green-400/20 bg-green-400/[0.08] px-4 py-2 text-sm text-green-300 backdrop-blur-xl">
               <span className="h-2 w-2 rounded-full bg-green-400 shadow-[0_0_15px_rgba(74,222,128,.8)]" />
-              Trạm Green Land
+              AstonCloud
             </div>
 
             <h1 className="max-w-3xl text-5xl font-bold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-              Một góc xanh
+              Hosting & VPS
               <span className="mt-3 block bg-gradient-to-r from-green-300 via-emerald-400 to-green-500 bg-clip-text text-transparent">
-                giữa The Green Alley.
+                đơn giản, mạnh mẽ.
               </span>
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-white/55">
-              Một không gian nhỏ dành cho những cuộc trò chuyện, những phút
-              thư giãn và những hoạt động cộng đồng của The Green Alley.
+              Hạ tầng hosting được xây dựng dành cho website, ứng dụng,
+              bot, game server và các dự án cá nhân. Triển khai nhanh,
+              quản lý dễ dàng và sẵn sàng cho những ý tưởng mới.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
               <a
-                href="#about"
+                href="#services"
                 className="group inline-flex items-center gap-3 rounded-2xl bg-green-500 px-6 py-3.5 font-semibold text-black transition duration-300 hover:-translate-y-0.5 hover:bg-green-400"
               >
-                Khám phá
+                Khám phá dịch vụ
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
               </a>
 
               <a
-                href="#activities"
+                href="#features"
                 className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.035] px-6 py-3.5 font-semibold text-white backdrop-blur-xl transition duration-300 hover:bg-white/[0.07]"
               >
-                Hoạt động
+                Tìm hiểu thêm
                 <span className="text-green-400">✦</span>
               </a>
             </div>
@@ -67,51 +68,61 @@ export default function GreenLandPage() {
 
             <div className="relative rounded-[36px] border border-white/10 bg-white/[0.04] p-3 shadow-2xl backdrop-blur-2xl">
               <div className="relative min-h-[450px] overflow-hidden rounded-[28px] bg-gradient-to-br from-[#12351f] via-[#0a2115] to-[#06110b]">
-                {/* Moon */}
-                <div className="absolute right-12 top-12 h-24 w-24 rounded-full bg-green-200/10 blur-[1px]" />
-                <div className="absolute right-14 top-14 h-20 w-20 rounded-full border border-green-200/10 bg-green-100/[0.04]" />
+                {/* Server glow */}
+                <div className="absolute left-1/2 top-1/3 h-64 w-64 -translate-x-1/2 rounded-full bg-green-400/10 blur-[90px]" />
 
-                {/* Glow */}
-                <div className="absolute left-1/2 top-1/3 h-56 w-56 -translate-x-1/2 rounded-full bg-green-400/10 blur-[90px]" />
+                {/* Decorative server nodes */}
+                <div className="absolute left-10 top-12 h-2 w-2 rounded-full bg-green-400 shadow-[0_0_20px_rgba(74,222,128,.8)]" />
+                <div className="absolute right-16 top-24 h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_20px_rgba(110,231,183,.7)]" />
 
-                {/* Grass / landscape */}
-                <div className="absolute bottom-0 left-0 right-0 h-44 bg-gradient-to-t from-[#041009] to-transparent" />
+                {/* Server illustration */}
+                <div className="absolute left-1/2 top-1/2 w-[72%] -translate-x-1/2 -translate-y-1/2">
+                  <div className="space-y-4">
+                    {[1, 2, 3].map((server) => (
+                      <div
+                        key={server}
+                        className="rounded-2xl border border-white/10 bg-black/30 p-4 shadow-xl backdrop-blur-xl"
+                      >
+                        <div className="flex items-center gap-4">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-green-400/20 bg-green-400/10">
+                            <span className="h-2 w-2 rounded-full bg-green-400 shadow-[0_0_12px_rgba(74,222,128,.8)]" />
+                          </div>
 
-                <div className="absolute bottom-0 left-[-40px] h-48 w-48 rounded-full bg-green-900/50 blur-2xl" />
-                <div className="absolute bottom-[-40px] right-[-30px] h-56 w-56 rounded-full bg-emerald-900/40 blur-2xl" />
+                          <div className="flex-1">
+                            <div className="h-2 w-28 rounded-full bg-white/20" />
+                            <div className="mt-2 h-1.5 w-20 rounded-full bg-white/10" />
+                          </div>
 
-                {/* Simple CSS trees */}
-                <div className="absolute bottom-16 left-10">
-                  <div className="mx-auto h-24 w-2 bg-green-950" />
-                  <div className="h-28 w-28 rounded-full bg-green-900/70" />
+                          <span className="text-xs text-green-400">
+                            ONLINE
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
-                <div className="absolute bottom-14 right-12">
-                  <div className="mx-auto h-20 w-2 bg-green-950" />
-                  <div className="h-24 w-24 rounded-full bg-green-800/60" />
-                </div>
-
-                {/* Center card */}
+                {/* Bottom card */}
                 <div className="absolute bottom-7 left-7 right-7 rounded-3xl border border-white/10 bg-black/25 p-6 backdrop-blur-xl">
                   <div className="flex items-start justify-between gap-5">
                     <div>
                       <p className="text-xs font-medium uppercase tracking-[0.25em] text-green-300">
-                        GREEN LAND
+                        ASTONCLOUD
                       </p>
 
                       <h2 className="mt-2 text-2xl font-bold">
-                        Điểm dừng chân
+                        Hạ tầng của bạn.
                       </h2>
                     </div>
 
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-green-400/20 bg-green-400/10 text-lg text-green-300">
-                      +
+                      ↗
                     </div>
                   </div>
 
                   <p className="mt-4 text-sm leading-6 text-white/45">
-                    Nơi mọi người có thể dừng lại, trò chuyện và tận hưởng
-                    những khoảnh khắc nhẹ nhàng.
+                    Hosting và VPS cho những dự án cần một nơi ổn định để
+                    chạy, phát triển và mở rộng.
                   </p>
                 </div>
               </div>
@@ -120,24 +131,24 @@ export default function GreenLandPage() {
         </div>
       </section>
 
-      {/* ABOUT */}
+      {/* SERVICES */}
       <section
-        id="about"
+        id="services"
         className="mx-auto max-w-7xl px-6 py-28 lg:px-10"
       >
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
-            Về Green Land
+            Dịch vụ
           </p>
 
           <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-            Không chỉ là một trạm.
+            Chọn hạ tầng phù hợp.
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-white/50">
-            Green Land được tạo ra như một khoảng không gian xanh trong hệ
-            sinh thái The Green Alley — nơi thành viên có thể kết nối, trò
-            chuyện và tham gia những hoạt động chung.
+            Từ một website nhỏ đến server cần nhiều tài nguyên hơn,
+            AstonCloud hướng tới việc cung cấp những lựa chọn đơn giản
+            và dễ sử dụng.
           </p>
         </div>
 
@@ -145,18 +156,18 @@ export default function GreenLandPage() {
           {[
             {
               number: "01",
-              title: "Kết nối",
-              text: "Gặp gỡ những người mới và cùng nhau xây dựng một cộng đồng thân thiện.",
+              title: "Web Hosting",
+              text: "Không gian lưu trữ cho website, API, landing page và các dự án web.",
             },
             {
               number: "02",
-              title: "Thư giãn",
-              text: "Một góc nhỏ để trò chuyện, nghỉ ngơi và tận hưởng thời gian rảnh.",
+              title: "VPS",
+              text: "Máy chủ riêng ảo cho ứng dụng, bot, backend và những workload cần quyền kiểm soát cao hơn.",
             },
             {
               number: "03",
-              title: "Cộng đồng",
-              text: "Cùng đóng góp ý tưởng và tạo nên những hoạt động đáng nhớ.",
+              title: "Game Hosting",
+              text: "Hạ tầng dành cho game server và các dự án cần môi trường chạy liên tục.",
             },
           ].map((item) => (
             <div
@@ -179,35 +190,51 @@ export default function GreenLandPage() {
         </div>
       </section>
 
-      {/* ACTIVITIES */}
+      {/* FEATURES */}
       <section
-        id="activities"
+        id="features"
         className="mx-auto max-w-7xl px-6 py-28 lg:px-10"
       >
         <div className="overflow-hidden rounded-[38px] border border-green-400/10 bg-green-400/[0.035] p-8 backdrop-blur-xl sm:p-12">
           <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
-                Hoạt động
+                Tính năng
               </p>
 
               <h2 className="mt-4 text-4xl font-bold tracking-tight">
-                Luôn có một lý do để ghé qua.
+                Mọi thứ cần thiết để vận hành dự án.
               </h2>
 
               <p className="mt-5 leading-7 text-white/50">
-                Từ những cuộc trò chuyện đơn giản đến các hoạt động cộng đồng,
-                Green Land là nơi để mọi người cùng tạo nên những khoảnh khắc
-                đáng nhớ.
+                Tập trung vào dự án của bạn thay vì phải loay hoay với
+                hạ tầng. AstonCloud hướng tới trải nghiệm quản lý đơn giản,
+                rõ ràng và dễ tiếp cận.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                ["01", "Trò chuyện", "Tán gẫu và làm quen với các thành viên."],
-                ["02", "Giải trí & Game", "Cùng nhau chơi và tham gia hoạt động."],
-                ["03", "Sự kiện", "Các hoạt động cộng đồng được tổ chức định kỳ."],
-                ["04", "Không gian xanh", "Một góc nhỏ mang tinh thần Green Land."],
+                [
+                  "01",
+                  "Triển khai nhanh",
+                  "Đưa dự án lên server và bắt đầu sử dụng nhanh chóng.",
+                ],
+                [
+                  "02",
+                  "Quản lý dễ dàng",
+                  "Giao diện quản lý trực quan cho các dịch vụ của bạn.",
+                ],
+                [
+                  "03",
+                  "Nhiều môi trường",
+                  "Hỗ trợ nhiều loại ứng dụng và workload khác nhau.",
+                ],
+                [
+                  "04",
+                  "Sẵn sàng mở rộng",
+                  "Có thể nâng cấp tài nguyên khi dự án phát triển.",
+                ],
               ].map(([number, title, text]) => (
                 <div
                   key={number}
@@ -227,30 +254,85 @@ export default function GreenLandPage() {
         </div>
       </section>
 
-      {/* LOCATION / CTA */}
+      {/* STACK */}
+      <section className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
+        <div className="grid gap-5 md:grid-cols-2">
+          <div className="rounded-[32px] border border-white/10 bg-white/[0.035] p-8 backdrop-blur-xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
+              Hạ tầng
+            </p>
+
+            <h2 className="mt-4 text-3xl font-bold">
+              Chạy những gì bạn cần.
+            </h2>
+
+            <p className="mt-4 leading-7 text-white/45">
+              Từ Node.js, Python, PHP đến Docker và các ứng dụng backend,
+              lựa chọn môi trường phù hợp với dự án của bạn.
+            </p>
+
+            <div className="mt-7 flex flex-wrap gap-2">
+              {["Node.js", "Python", "PHP", "Docker", "MySQL", "PostgreSQL"].map(
+                (item) => (
+                  <span
+                    key={item}
+                    className="rounded-xl border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-white/60"
+                  >
+                    {item}
+                  </span>
+                )
+              )}
+            </div>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-white/[0.035] p-8 backdrop-blur-xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
+              Kiểm soát
+            </p>
+
+            <h2 className="mt-4 text-3xl font-bold">
+              Server của bạn, cách của bạn.
+            </h2>
+
+            <p className="mt-4 leading-7 text-white/45">
+              Chủ động cấu hình, triển khai và quản lý ứng dụng theo nhu cầu
+              thay vì bị giới hạn trong một mô hình duy nhất.
+            </p>
+
+            <div className="mt-7 flex items-center gap-3 rounded-2xl border border-green-400/10 bg-green-400/[0.04] p-4">
+              <span className="h-2.5 w-2.5 rounded-full bg-green-400 shadow-[0_0_15px_rgba(74,222,128,.8)]" />
+              <span className="text-sm text-white/60">
+                Infrastructure ready
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
         <div className="relative overflow-hidden rounded-[38px] border border-white/10 bg-white/[0.035] p-8 backdrop-blur-xl sm:p-12">
           <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-green-500/10 blur-[100px]" />
 
           <div className="relative">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
-              The Green Alley
+              AstonCloud
             </p>
 
             <h2 className="mt-4 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-              Hẹn gặp bạn tại Green Land.
+              Sẵn sàng đưa dự án của bạn lên server?
             </h2>
 
             <p className="mt-5 max-w-xl leading-7 text-white/50">
-              Một điểm dừng chân nhỏ trong hành trình khám phá, giải trí và
-              kết nối cùng cộng đồng The Green Alley.
+              Bắt đầu với một môi trường phù hợp và xây dựng dự án của bạn
+              trên hạ tầng AstonCloud.
             </p>
 
             <a
               href="/"
               className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-white px-6 py-3.5 font-semibold text-black transition hover:bg-green-300"
             >
-              Về The Green Alley
+              Xem dịch vụ
               <span>→</span>
             </a>
           </div>
@@ -262,10 +344,10 @@ export default function GreenLandPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/30 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-green-400" />
-            Trạm Green Land
+            Aston Cloud
           </div>
 
-          <p>© {new Date().getFullYear()} The Green Alley</p>
+          <p>© {new Date().getFullYear()} AstonCloud</p>
         </div>
       </footer>
     </main>
